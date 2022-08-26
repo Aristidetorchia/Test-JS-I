@@ -12,7 +12,7 @@
 const nuevaString = 'GNU Linux';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = '999';
+const nuevoNum = '333';
 
 // Crea una variable booleana:
 const nuevoBool = null;
