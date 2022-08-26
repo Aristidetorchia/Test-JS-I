@@ -15,7 +15,7 @@ const nuevaString = 'GNU Linux';
 const nuevoNum = '333';
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = 'falso';
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === null;
