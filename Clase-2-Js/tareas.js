@@ -49,8 +49,6 @@ function resta(x, y) {
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-}
-function multiplica(x, y) {
   return x * y;
 }
 
