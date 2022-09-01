@@ -4,7 +4,7 @@ Desde la carpeta TEST-JS-I (donde se encuentra el archivo package.json) deberán
 
 Para ejecutar cada uno de los test dividos por niveles (clases), es necesario que escriban en la terminal, desde la carpeta TEST-JS-I y según la tarea que quieran evaluar, lo siguiente:
 
-* npm test Clase-2-Js
+* npm test Clase-2-Js 
 
 * npm test Clase-3-Js
 
