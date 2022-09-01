@@ -12,19 +12,19 @@
 const nuevaString = 'GNU Linux';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = '333';
+const nuevoNum = 333;
 
 // Crea una variable booleana:
-const nuevoBool = 'falso';
+const nuevoBool = "falso";
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 5 === '5';
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === '40';
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === '1';
+const nuevoModulo = 21 % 5 === 1;
 
 // ----------------------------------
 
