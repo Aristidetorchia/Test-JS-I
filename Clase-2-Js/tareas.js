@@ -89,10 +89,11 @@ function obtenerResto(x, y) {
   return x % y;
 }
 
-function esPar(num) {
+function esPar(valor = 0) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+  return (valor % 2 === 0) ? true : false;
 }
 
 function esImpar(num) {
