@@ -96,10 +96,11 @@ function esPar(valor = 0) {
   return (valor % 2 === 0) ? true : false;
 }
 
-function esImpar(num) {
+function esImpar(valor = 0) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  return (valor % 2 !== 0) ? true : false;
 }
 
 function elevarAlCuadrado(num) {
