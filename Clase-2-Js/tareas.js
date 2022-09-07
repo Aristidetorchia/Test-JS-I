@@ -1,6 +1,6 @@
-// En los próximos ejercicios, deberás completar las funciones con tu resolución.
 // Todo tu código irá dentro de las llaves de la función.
 // Recuerda que una función siempre devuelve un valor. (return)
+// En los próximos ejercicios, deberás completar las funciones con tu resolución.
 
 // Nota: No modificar los nombres de las funciones y no utilizar console.log
 // Caso contrario, no correrán los test!
@@ -133,6 +133,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -166,6 +167,7 @@ function deEuroAdolar(euro) {
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí:
+  return euro*1.20;
 }
 
 // ---------- Puntos extra ----------
