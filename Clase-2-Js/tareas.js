@@ -150,6 +150,8 @@ function esPositivo(numero) {
     return 'Es positivo';
   }else if(numero>0){
     return 'Es negativo';
+  }else{
+    return 'fase';
   }
   }
 
@@ -190,11 +192,13 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado) {
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
+  return lado + lado + lado + lado;
 }
 
 function areaDelTriangulo(base, altura) {
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
+  return base * altura /2;
 }
 
 function esVocal(letra) {
