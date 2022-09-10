@@ -75,6 +75,11 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num < 90) {
+    return "true";
+  } else if (num > 90) {
+    return "false";
+  }
 }
 
 function mayorQueCincuenta(num) {
@@ -167,6 +172,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Cristian" -> "Soy Cristian"
   // Tu código:
+  return nombre + " " + apellido;
 }
 
 function obtenerSaludo(nombre) {
