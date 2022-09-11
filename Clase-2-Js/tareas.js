@@ -215,14 +215,16 @@ function areaDelTriangulo(base, altura) {
   return base * altura /2;
 }
 
-function esVocal(letra = (a)(e)(i)(o)(u)) {
+function esVocal(letra) {
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra = vocal) {
+  if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
     return "Es vocal";
-  } else ("Dato incorrecto")
+  } else if (letra.length !== 1) {
+    return "Dato incorrecto";
+  }
 }
 
 // --------------------------------
