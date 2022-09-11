@@ -68,7 +68,8 @@ function sonIguales(x, y) {
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
-  // Tu código: 
+  // Tu código:
+  return str1.length == str2.length;
 }
 
 function menosQueNoventa(num = 89) {
@@ -214,11 +215,14 @@ function areaDelTriangulo(base, altura) {
   return base * altura /2;
 }
 
-function esVocal(letra) {
+function esVocal(letra = (a)(e)(i)(o)(u)) {
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
+  if (letra = vocal) {
+    return "Es vocal";
+  } else ("Dato incorrecto")
 }
 
 // --------------------------------
