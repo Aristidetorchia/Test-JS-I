@@ -5,11 +5,11 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if(x > y){
+  if (x > y) {
     return x;
-  }else if(y > x){
+  } else if (y > x) {
     return y;
-  }else{
+  } else {
     return x || y;
   }
 }
@@ -35,13 +35,13 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if(idioma === "aleman"){
+  if (idioma === "aleman") {
     return "Guten Tag!";
-  }else if(idioma === "mandarin"){
+  } else if (idioma === "mandarin") {
     return "Ni Hao!";
-  }else if(idioma === "ingles"){
+  } else if (idioma === "ingles") {
     return "Hello!";
-  }else{
+  } else {
     return "Hola!";
   }
 }
@@ -54,6 +54,19 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Pista: Puedes usar el statement Switch.
+  switch (color) {
+    case "blue":
+      return "This is blue";
+    case "red":
+      return "This is red";
+    case "green":
+      return "This is green";
+    case "orange":
+      return "This is orange";
+    default:
+      return "Color not found";
+
+  }
 }
 
 function esDiezOCinco(numero) {
@@ -115,12 +128,13 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   // Tu código:
-  if (numero === 2){
+  if (numero === 2) {
     return true;
-  }else if(numero < 2){
-  return false;
-  }for(var i = 2 ; i < numero;i++){
-    if(numero % i === 0){
+  } else if (numero < 2) {
+    return false;
+  }
+  for (var i = 2; i < numero; i++) {
+    if (numero % i === 0) {
       return false;
     }
   }
