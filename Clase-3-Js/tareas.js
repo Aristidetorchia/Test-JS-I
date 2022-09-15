@@ -18,9 +18,10 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if(edad >=18){
+  if (edad >= 18) {
     return "Allowed";
-  }if(edad < 18){
+  }
+  if (edad < 18) {
     return "Not allowed";
   }
 }
@@ -31,11 +32,11 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if (status === 1){
+  if (status === 1) {
     return "Online";
-  }else if(status === 2){
+  } else if (status === 2) {
     return "Away";
-  }else{
+  } else {
     return "Offline";
   }
 }
@@ -85,9 +86,9 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(numero === 10 || numero === 5){
+  if (numero === 10 || numero === 5) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
@@ -96,9 +97,9 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ( 20 < numero && 50 > numero){
+  if (20 < numero && 50 > numero) {
     return true;
-  }else{
+  } else {
     return false;
   }
 
@@ -113,9 +114,9 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if(numero === Math.floor(numero)){
+  if (numero === Math.floor(numero)) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
@@ -125,13 +126,13 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if(numero% 3 === 0 && numero %5 === 0) {
+  if (numero % 3 === 0 && numero % 5 === 0) {
     return "fizzbuzz";
-  }else if (numero % 3 === 0) {
+  } else if (numero % 3 === 0) {
     return "fizz";
-  }else if (numero % 5 === 0) {
+  } else if (numero % 5 === 0) {
     return "buzz";
-  }else {
+  } else {
     return (numero);
   }
 }
@@ -144,76 +145,88 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   //Tu código:
-}
-
-function esVerdadero(valor) {
-  //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
-  //si su valor es true y “Soy falso” si su valor es false.
-  //Escribe tu código aquí:
-}
-
-function tieneTresDigitos(numero) {
-  //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
-  //Escribe tu código aquí:
-  if((numero.toString()).length === 3){
-    return true;
-  }
-  return false;
-}
-
-// ---------- Puntos extra ----------
-
-function esPrimo(numero) {
-  // Devuelve "true" si "numero" es primo
-  // De lo contrario devuelve "falso"
-  // Pista: un número primo solo es divisible por sí mismo y por 1
-  // Pista 2: Puedes resolverlo usando un bucle `for`
-  // Nota: Los números 0 y 1 NO son considerados números primos
-  // Tu código:
-  if (numero === 2) {
-    return true;
-  } else if (numero < 2) {
+  if(num1 === 0 || num2 === 0 || num3 ===0){
+    return "Error";
+  }else if(num1 < 0 || num2 < 0 || num3 <0) {
+    return "Hay negativos";
+  }else if(num1 > num2 && num1 >3 && num1 > 0) {
+    return "Número 1 es mayor y positivo";
+  }else if(num3 > num1 && num3 > num2) {
+    return num3+1;
+  }else{
     return false;
   }
-  for (var i = 2; i < numero; i++) {
-    if (numero % i === 0) {
+}
+
+
+  function esVerdadero(valor) {
+    //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
+    //si su valor es true y “Soy falso” si su valor es false.
+    //Escribe tu código aquí:
+  }
+
+  function tieneTresDigitos(numero) {
+    //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
+    //Escribe tu código aquí:
+    if ((numero.toString()).length === 3) {
+      return true;
+    }
+    return false;
+  }
+
+  // ---------- Puntos extra ----------
+
+  function esPrimo(numero) {
+    // Devuelve "true" si "numero" es primo
+    // De lo contrario devuelve "falso"
+    // Pista: un número primo solo es divisible por sí mismo y por 1
+    // Pista 2: Puedes resolverlo usando un bucle `for`
+    // Nota: Los números 0 y 1 NO son considerados números primos
+    // Tu código:
+    if (numero === 2) {
+      return true;
+    } else if (numero < 2) {
       return false;
     }
+    for (var i = 2; i < numero; i++) {
+      if (numero % i === 0) {
+        return false;
+      }
+    }
+    return true;
   }
-  return true;
-}
 
-function doWhile(numero) {
-  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
-  //Retornar el valor final.
-  //Usar el bucle do ... while.
-  //Tu código:
-  var contador = 8;
-  var resultado = 0;
-  do{
-    resultado += 5
-    contador -= 1;
-  }while ( contador!== 0)
+  function doWhile(numero) {
+    //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
+    //Retornar el valor final.
+    //Usar el bucle do ... while.
+    //Tu código:
+    var contador = 8;
+    var resultado = 0;
+    do {
+      resultado += 5
+      contador -= 1;
+    } while (contador !== 0)
 
-  return numero + resultado;
-}
+    return numero + resultado;
+  }
 
-// No modificar nada debajo de esta línea, sino no correrán los test.
-// --------------------------------
+  // No modificar nada debajo de esta línea, sino no correrán los test.
+  // --------------------------------
 
-module.exports = {
-  obtenerMayor,
-  mayoriaDeEdad,
-  conection,
-  saludo,
-  colors,
-  esDiezOCinco,
-  estaEnRango,
-  esEntero,
-  fizzBuzz,
-  operadoresLogicos,
-  esPrimo,
-  esVerdadero,
-  tieneTresDigitos,
-  doWhile
-};
+  module.exports = {
+    obtenerMayor,
+    mayoriaDeEdad,
+    conection,
+    saludo,
+    colors,
+    esDiezOCinco,
+    estaEnRango,
+    esEntero,
+    fizzBuzz,
+    operadoresLogicos,
+    esPrimo,
+    esVerdadero,
+    tieneTresDigitos,
+    doWhile
+  };
