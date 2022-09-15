@@ -150,6 +150,14 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   //Tu código:
+  var contador = 8;
+  var resultado = 0;
+  do{
+    resultado += 5
+    contador -= 1;
+  }while ( contador!== 0)
+
+  return numero + resultado;
 }
 
 // No modificar nada debajo de esta línea, sino no correrán los test.
