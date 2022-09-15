@@ -75,6 +75,8 @@ function esDiezOCinco(numero) {
   // Tu código:
   if(numero === 10 || numero === 5){
     return true;
+  }else{
+    return false;
   }
 }
 
