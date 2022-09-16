@@ -87,6 +87,9 @@ function crearUsuario() {
     //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
     //Ej: "Juan, 22 años"
     //Tu código:
+    Persona.prototype.datos = function(){
+      return (this.nombre + ", " + this.edad + " años");
+    }
   }
 
 
